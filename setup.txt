@@ -1,0 +1,2 @@
+Para preparar el esqueleto de la solución del Monopoly basado en Nodejs, sigue los siguientes pasos:
+1.
