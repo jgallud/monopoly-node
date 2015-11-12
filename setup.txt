@@ -5,7 +5,8 @@ Para preparar el esqueleto de la solución del Monopoly basado en Nodejs, sigue 
 
 3. Una vez tenemos la estructura de carpetas, copiamos nuestro modelo del juego y nuestro archivo de test en la carpeta server (en este repositorio se utiliza como referencia el archivo juego.js para el modelo y monopoly_spec.js para los tests)
 
------------para entender mejor el siguiente paso es recomendable haber realizado los ejercicios 1 a 5 del tutorial-nodejs--------------------
+-----------para entender mejor el siguiente paso es recomendable haber realizado los ejercicios 1 a 5 del tutorial-nodejs------
+--- En particular, para que funcionen los siguientes pasos es necesario instalar Nodejs (nodejs.org)
 
 4. El siguiente paso es realizar unos pequeños cambios en el modelo para que funcione en el lado del servidor. Los cambios tienen por objeto exportar aquellos objetos que necesitemos (por ahora los que necesitemos para pasar los tests). Puedes ver cómo exportar objetos en el archivo juego.js (última linea).
 
