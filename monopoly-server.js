@@ -33,7 +33,7 @@ app.get("/nuevoJugador/:nombre",function(request,response){
 	var jugador=new modelo.Usuario(request.params.nombre);
 	juego.nuevoJugador(jugador);
 	if (jugador.ficha){		
-		jsonData={"nombre":jugador.nombre,"color":jugador.ficha.color,"fase":juego.fase.nombre};	
+		jsonData={"nombre":jugador.nombre,"uid":jugador.uid,"color":jugador.ficha.color,"fase":juego.fase.nombre};	
 		//jsonData=jugador.ficha;
 	}
 	else jsonData={"nombre":"sorry","color":"no hay fichas","posicion":"-1","uid":"sorry"};;

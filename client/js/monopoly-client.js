@@ -17,8 +17,9 @@ function quitarBotonPedir(){
 	$("#zonaPedir").remove();
 }
 
-function mostrarDatosJugador(nombre){
-	mostrarNombre(nombre)
+function mostrarDatosJugador(nombre,uid){
+	mostrarNombre(nombre);
+	mostrarUid(uid);
 }
 
 function mostrarNombre(nombre){
@@ -26,11 +27,16 @@ function mostrarNombre(nombre){
 	$("#resultados").append("<p id='nombre'>Nombre: "+nombre+"</p>");
 }
 
+function mostrarUid(uid){
+	$("#uid").remove();
+	$("#resultados").append("<p id='uid'>uid: "+uid+"</p>");	
+}
+
 //Funciones para comunicar con el servidor
 function obtenerFicha(nombre){
 	$.getJSON(url+"nuevoJugador/"+nombre,function(data){
 		//guardarCookies(data);
 		quitarBotonPedir();
-		mostrarDatosJugador(data.nombre);
+		mostrarDatosJugador(data.nombre,data.uid);
 	})
 }
