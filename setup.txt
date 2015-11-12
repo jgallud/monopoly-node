@@ -21,7 +21,7 @@ Para preparar el esqueleto de la solución del Monopoly basado en Nodejs, sigue 
 
 10. Una vez tenemos el modelo y los tests en perfecto estado, tenemos que modificar nuestro archivo monopoly-server.js para que utiliza nuestro modelo. Observa la línea var modelo=require("./server/juego.js") y modifícala para que utilice tu modelo.
 
-11. Antes de poder lanzar el servidor, tenemos que instalar módulos Nodejs. En línea de comandos (en el directorio raiz de nuestra solucion, esto es, en monopoly-node) ejecuta npm install underscore (si utilizas underscore), npm install express
+11. Antes de poder lanzar el servidor, tenemos que instalar módulos Nodejs. En línea de comandos (en el directorio raiz de nuestra solucion, esto es, en monopoly-node) ejecuta npm install underscore (si utilizas underscore). Ejecuta después: npm install express
 
 12. Una vez hayamos instalado los módulos Nodejs y modificado el archivo del paso 10, en linea de comandos ejecuta node monopoly-server.js 
 
